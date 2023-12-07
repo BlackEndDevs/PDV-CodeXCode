@@ -1,0 +1,258 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "pdv",
+    "dateExported": "2023-11-16T20:04:30.951Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "92fc3968-400e-4c80-aad7-6dbb63e6c8fc",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "detalharUsuario",
+            "url": "http://localhost:8000/usuario",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-16T19:47:56.588Z",
+            "modified": "2023-11-16T19:50:54.590Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c2474f7a-4378-4294-981a-07eaca79be4e",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "logarUsuario",
+            "url": "http://localhost:8000/login",
+            "method": "POST",
+            "sortNum": 11250,
+            "created": "2023-11-16T19:48:21.270Z",
+            "modified": "2023-11-16T19:50:33.791Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\":\"ed@dev.com\",\n  \"senha\":\"Senha1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "455e3d86-a7f7-4dca-b6ba-989e3640e674",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "cadastrarUsuario",
+            "url": "http://localhost:8000/usuario",
+            "method": "POST",
+            "sortNum": 11875,
+            "created": "2023-11-16T19:49:16.133Z",
+            "modified": "2023-11-16T19:50:13.391Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Ednerney\",\n  \"email\":\"ed@dev.com\",\n  \"senha\":\"Senha1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fbe18329-8c14-491f-932b-10d9d1ed47c7",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "listarProdutos",
+            "url": "http://localhost:8000/produto",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-11-16T19:53:09.998Z",
+            "modified": "2023-11-16T19:53:56.964Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a569d1ea-cdfe-47f1-8e8a-8c6bf59a7173",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "filtrarProdutosPorCategoria",
+            "url": "http://localhost:8000/produto?categoria_id=",
+            "method": "GET",
+            "sortNum": 27500,
+            "created": "2023-11-16T19:54:06.063Z",
+            "modified": "2023-11-16T19:57:41.903Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [
+                {
+                    "name": "categoria_id",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4d49bb9e-f2fb-4138-a7ab-3f114d3fd8eb",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "cadastrarProduto",
+            "url": "http://localhost:8000/produto",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-16T19:51:14.139Z",
+            "modified": "2023-11-16T19:52:56.833Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"descricao\":\"jabuticaba\",\n  \"quantidade_estoque\":25,\n  \"valor\":5000,\n  \"categoria_id\":4\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91ff4eb2-b6ea-4cf8-973c-3d3368f291d3",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "atualizarProduto",
+            "url": "http://localhost:8000/produto/2",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2023-11-16T19:55:10.016Z",
+            "modified": "2023-11-16T19:56:02.026Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{  \n  \"descricao\":\"morango\",\n  \"quantidade_estoque\":0,\n  \"valor\":5000,\n  \"categoria_id\":8\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "32bd4296-44dd-4459-9551-1462a35a966f",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "deletarProduto",
+            "url": "http://localhost:8000/produto/-1",
+            "method": "DELETE",
+            "sortNum": 47500,
+            "created": "2023-11-16T19:56:49.145Z",
+            "modified": "2023-11-16T19:57:58.179Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb71cd5f-7cce-4614-b82b-7402d9d6f49c",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "listarCategorias",
+            "url": "http://localhost:8000/categoria",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-16T19:52:38.725Z",
+            "modified": "2023-11-16T19:52:49.454Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c0ea74e-8e40-48d0-9f68-8e3c9e31c48a",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "cadastrarCliente",
+            "url": "http://localhost:8000/cliente",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-11-16T19:58:14.412Z",
+            "modified": "2023-11-16T19:59:27.317Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Ederney\",\n  \"cpf\":\"51236478911\",\n  \"email\":\"ed@dev.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "af18d8ed-59f9-4c5d-8e43-b8e22647846e",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "listarClientes",
+            "url": "http://localhost:8000/cliente",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-11-16T20:00:02.688Z",
+            "modified": "2023-11-16T20:04:00.846Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b8ff3b02-601e-421d-b4ef-fbb216b43a9b",
+            "colId": "703ce55b-12b3-4404-b6a1-2f8bb684825e",
+            "containerId": "",
+            "name": "atualizarCliente",
+            "url": "http://localhost:8000/cliente/3",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-11-16T20:00:46.721Z",
+            "modified": "2023-11-16T20:04:15.405Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Ederney\",\n    \"email\": \"cliente0@email.com\",\n    \"cpf\": \"51236478911\",\n    \"cep\": \"73255904\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

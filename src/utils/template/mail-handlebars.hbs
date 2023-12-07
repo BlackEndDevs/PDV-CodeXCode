@@ -1,0 +1,29 @@
+<p>Caro {{ cliente_nome }},</p>
+
+    <p>Agradecemos por escolher nossos produtos. Seu pedido foi recebido com sucesso e está sendo processado. Abaixo estão os detalhes do seu pedido:</p>
+
+    <ul>
+        <li>Número do Pedido: {{ pedido_id }}</li>
+        <li>Data do Pedido: {{ data_pedido }}</li>
+        <li>Observação: {{ observacao }}</li>
+    </ul>
+
+    <p>Produtos Encomendados:</p>
+    <ul>
+        {{#each pedido_produtos}}
+            <li>
+                - Produto ID: {{ this.produto_id }}<br>
+                Quantidade: {{ this.quantidade_produto }}
+            </li>
+        {{/each}}
+    </ul>
+
+    <p>Total a Pagar: R$ {{ total_a_pagar }}</p>
+
+    <p>Fique atento às atualizações do seu pedido. Em caso de dúvidas ou alterações, entre em contato conosco.</p>
+
+    <p>Agradecemos pela sua preferência!</p>
+
+    <p>Atenciosamente,<br>
+    Code X Code<br>
+    <a href="mailto:codexcode@mail.com">codexcode@mail.com</a></p>

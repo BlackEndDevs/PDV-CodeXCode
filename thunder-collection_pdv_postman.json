@@ -1,0 +1,332 @@
+{
+    "info": {
+        "_postman_id": "d0cd2240-c3f0-4905-bf9d-84644cac3c42",
+        "name": "pdv",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "detalharUsuario",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/usuario",
+                    "path": [
+                        "usuario"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "logarUsuario",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/login",
+                    "path": [
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n \"email\":\"ed@dev.com\",\n  \"senha\":\"Senha1234\"\n}"
+                }
+            }
+        },
+        {
+            "name": "cadastrarUsuario",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/usuario",
+                    "path": [
+                        "usuario"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nome\":\"Ednerney\",\n  \"email\":\"ed@dev.com\",\n  \"senha\":\"Senha1234\"\n}"
+                }
+            }
+        },
+        {
+            "name": "cadastrarProduto",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/produto",
+                    "path": [
+                        "produto"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"descricao\":\"jabuticaba\",\n  \"quantidade_estoque\":25,\n  \"valor\":5000,\n  \"categoria_id\":4\n}"
+                }
+            }
+        },
+        {
+            "name": "listarCategorias",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/categoria",
+                    "path": [
+                        "categoria"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "listarProdutos",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/produto",
+                    "path": [
+                        "produto"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "filtrarProdutosPorCategoria",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/produto?categoria_id=",
+                    "query": [
+                        {
+                            "key": "categoria_id",
+                            "value": ""
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "produto"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "atualizarProduto",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/produto/2",
+                    "path": [
+                        "produto",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{  \n  \"descricao\":\"morango\",\n  \"quantidade_estoque\":0,\n  \"valor\":5000,\n  \"categoria_id\":8\n}"
+                }
+            }
+        },
+        {
+            "name": "deletarProduto",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/produto/-1",
+                    "path": [
+                        "produto",
+                        "-1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "cadastrarCliente",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/cliente",
+                    "path": [
+                        "cliente"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nome\":\"Ederney\",\n  \"cpf\":\"51236478911\",\n  \"email\":\"ed@dev.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "listarClientes",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/cliente",
+                    "path": [
+                        "cliente"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "atualizarCliente",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/cliente/3",
+                    "path": [
+                        "cliente",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNzAwMTY0MjMzLCJleHAiOjE3MDAxOTMwMzN9.c_fqkZuRZFVj7SZthTYEJaJitpht0kGTtpZjAWwmn94"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nome\": \"Ederney\",\n    \"email\": \"cliente0@email.com\",\n    \"cpf\": \"51236478911\",\n    \"cep\": \"73255904\"\n}"
+                }
+            }
+        }
+    ]
+}
